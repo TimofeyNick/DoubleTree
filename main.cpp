@@ -25,5 +25,10 @@ int main()
     Node k = tree.find_node(5);
     cout << "-------------------------" << endl;
     cout << "k.key_ = " << k.key_ << endl;
+    // добавляю тесты, которые не работают
+    // после попытки запуска одно из них прога ложиться
+    Node l = tree.find_node(8);
+    tree.insert(9);
+    tree.insert(7);
     return 0;
 }
