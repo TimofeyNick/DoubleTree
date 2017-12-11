@@ -9,15 +9,13 @@ Tree::~Tree(){}
 
 Node Tree::find_node(float data){
     Node* p = &root_;
-    while(p -> key_ != -1){
-        while (p -> key_ != data) {
+    while(p -> key_ != -1 && p -> key_ != data){
             if(data > p->key_){
                 p = p->right_;
             }
             else{
                 p = p->left_;
             }
-        }
     }
     return *p;
 }
